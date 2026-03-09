@@ -17,6 +17,6 @@ def estimate_dg(sequence):
         dg += NN_DG.get(pair, 0)
     return dg
 
-sequence = "GCGTATGCATGCATGCGT"
+sequence = "GAATATACGATGCGT"
 dg = estimate_dg(sequence)
 print("Estimated ΔG (kcal/mol):", dg)
