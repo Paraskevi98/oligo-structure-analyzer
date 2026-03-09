@@ -17,9 +17,11 @@ Clone the repository and install any dependencies (if needed):
 ```bash
 git clone https://github.com/paraskevi98/oligo-structure-analyzer.git
 cd oligo-structure-analyzer
+```
 
 ## USAGE
 #ΔG Calculation
+```python
 from primer_dg import estimate_dg
 
 sequence = "GAATATACGATGCGT"
@@ -35,7 +37,7 @@ template = "GGTCGGGGTGGATGCATGCGAT"
 loops = find_relaxed_loops(primer, template)
 print("Detected hairpins:", loops)
 
-##Example Output
+## Example Output
 
 Estimated ΔG (kcal/mol): -25.36
 Detected hairpins: [
